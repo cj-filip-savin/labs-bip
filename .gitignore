@@ -1,0 +1,15 @@
+/.venv
+__pycache__/
+*.py[cod]
+*$py.class
+/.vscode/
+*~
+requirements.txt
+.pytest_cache
+.DS_Store
+.mypy_cache
+/tmp
+/dist
+/.idea
+/.env
+.mypy_cache

@@ -1,0 +1,28 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  standard:
+    format: '%(asctime)s | %(process)-6d | %(levelname)-7s | %(name)-16s | %(message)s'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: TRACE
+    formatter: standard
+    stream: ext://sys.stderr
+
+loggers:
+  root:
+    handlers: [console]
+  asyncio:
+    level: WARNING
+  sqlalchemy.engine.Engine:
+    handlers: [console]
+    propagate: false
+  gunicorn:
+    handlers: [console]
+    propagate: false
+  gunicorn.access:
+    handlers: [console]
+    propagate: false
