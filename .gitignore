@@ -13,3 +13,5 @@ requirements.txt
 /.idea
 /.env
 .mypy_cache
+/data/samples/*
+

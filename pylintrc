@@ -1,8 +1,8 @@
 [BASIC]
-good-names=fp, logger, ip, i
+good-names=fp, logger, ip, i, s, d
 
 [MESSAGES CONTROL]
 disable=W1514
 
 [MASTER]
-extension-pkg-whitelist=pydantic
+extension-pkg-whitelist=pydantic,pyminizip
